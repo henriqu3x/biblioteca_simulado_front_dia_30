@@ -256,3 +256,30 @@
 #home .cards-content .card-content .box-btns button:nth-child(3):hover{
      opacity: 0.7;
 }
+
+@media (max-width:500px) {
+     #home .cards{
+          flex-direction: column;
+     }
+
+     #home .cards-content .card-content{
+          flex-direction: column;
+          gap: 10px;
+          height: auto;
+     }
+     
+     #home .cards-content .card-content .box-btns{
+          overflow: wrap;
+          max-width: 100%;
+          
+     }
+
+     #home .box-filtros{
+          flex-direction: column;
+          gap: 15px;
+     }
+
+     #home .title{
+          flex-direction: column;
+     }
+}
