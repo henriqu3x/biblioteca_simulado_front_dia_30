@@ -1,0 +1,106 @@
+#overlay{
+     inset: 0;
+     background-color: #0000005d;
+     height: 100vh;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+}
+
+#overlay .modal {
+     height: 90%;
+     width: 55%;
+     padding: 40px;
+     background-color: #fff;
+     border-radius: 8px;
+     z-index: 999;
+}
+
+#overlay .modal .title{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 30px;
+}
+
+#overlay .modal .title div {
+     padding: 5px;
+     cursor: pointer;
+     transition: 0.2s  all ease-in-out;
+}
+
+#overlay .modal .title div:hover{
+     color: var(--details-orange);
+}
+
+#overlay .modal form {
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+     overflow-y: scroll;
+     padding-top: 30px;
+     gap: 5px;
+}
+
+#overlay .modal form .label-input{
+     display: flex;
+     flex-direction: column;
+     gap: 3px;
+}
+
+#overlay .modal form .label-input input {
+     padding: 10px 15px;
+     outline: none;
+     border: 2px solid #666;
+     border-radius: 8px;
+     transition: 0.2s all ease-in-out;
+}
+
+#overlay .modal form .label-input input:focus{
+     border: 2px solid var(--details-orange);
+}
+
+#overlay .modal form .label-input textarea {
+     padding: 10px 15px;
+     outline: none;
+     border: 2px solid #666;
+     border-radius: 8px;
+     transition: 0.2s all ease-in-out;
+     max-width: 100%;
+     min-width: 100%;
+     max-height: 80px;
+     min-height: 80px;
+}
+
+#overlay .modal form .label-input textarea:focus{
+     border: 2px solid var(--details-orange);
+}
+
+#overlay .modal form .label-input select {
+     padding: 10px 15px;
+     outline: none;
+     border: 2px solid #666;
+     border-radius: 8px;
+     transition: 0.2s all ease-in-out;
+}
+
+#overlay .modal form .label-input select:focus{
+     border: 2px solid var(--details-orange);
+}
+
+#overlay .modal form button{
+     margin-top: auto;
+     background-color: var(--details-blue);
+     padding: 10px 15px;
+     color: #fff;
+     border-radius: 8px;
+     border: none;
+     cursor: pointer;
+     transition: 0.2s all ease-in-out;
+}
+
+#overlay .modal form button:hover{
+     opacity: 0.7;
+}

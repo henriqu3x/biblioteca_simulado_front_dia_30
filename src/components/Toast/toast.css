@@ -1,0 +1,42 @@
+#toast{
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     width: 450px;
+     height: 70px;
+     background-color: rgb(225, 0, 0);
+     border-radius: 8px;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 15px;
+     transform: translateX(calc(100% + 30px));
+     animation: entrada 5s ease-in-out normal;
+     z-index: 999;
+}
+
+#toast p{
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+
+@keyframes entrada {
+     0%{
+          transform: translateX(calc(100% + 30px));
+          
+     }
+     25%{
+          transform: translateX(0);
+          
+     }
+     75%{
+          transform: translateX(0);
+          
+     }
+     100%{
+          transform: translateX(calc(100% + 30px));
+          
+     }
+}
